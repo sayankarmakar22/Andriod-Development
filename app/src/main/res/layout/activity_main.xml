@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnUpload"
-        android:layout_width="wrap_content"
+        android:id="@+id/dark"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginTop="40dp"
-        android:text="upload" />
+        android:padding="5dp"
+        android:text="dark" />
 
     <Button
-        android:id="@+id/btnDownload"
-        android:layout_width="wrap_content"
+        android:id="@+id/light"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginTop="40dp"
-        android:text="download" />
+        android:text="light" />
 </LinearLayout>

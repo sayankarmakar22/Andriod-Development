@@ -3,6 +3,7 @@ package com.example.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -11,14 +12,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val upload = findViewById<Button>(R.id.btnUpload)
-        val download = findViewById<Button>(R.id.btnDownload)
+        val dark = findViewById<Button>(R.id.dark)
+        val light = findViewById<Button>(R.id.light)
+        val layout = findViewById<LinearLayout>(R.id.linearLayout)
 
-        upload.setOnClickListener{
-            Toast.makeText(applicationContext,"uploading...",Toast.LENGTH_SHORT).show()
+        dark.setOnClickListener {
+            layout.setBackgroundResource(R.color.black)
         }
-        download.setOnClickListener{
-            Toast.makeText(applicationContext,"downloading...",Toast.LENGTH_SHORT).show()
+        light.setOnClickListener {
+            layout.setBackgroundResource(R.color.yellow)
         }
     }
 }
