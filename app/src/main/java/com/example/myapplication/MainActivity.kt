@@ -11,16 +11,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-        val dark = findViewById<Button>(R.id.dark)
-        val light = findViewById<Button>(R.id.light)
-        val layout = findViewById<LinearLayout>(R.id.linearLayout)
-
-        dark.setOnClickListener {
-            layout.setBackgroundResource(R.color.black)
-        }
-        light.setOnClickListener {
-            layout.setBackgroundResource(R.color.yellow)
-        }
+//
+//        val dark = findViewById<Button>(R.id.dark)
+//        val light = findViewById<Button>(R.id.light)
+//        val layout = findViewById<LinearLayout>(R.id.linearLayout)
+//
+//        dark.setOnClickListener {
+//            layout.setBackgroundResource(R.color.black)
+//        }
+//        light.setOnClickListener {
+//            layout.setBackgroundResource(R.color.yellow)
+//        }
     }
 }
